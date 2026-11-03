@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FuelScreen</class>
+ <widget class="QWidget" name="FuelScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1026</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>20</y>
+     <width>241</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #2b2f36; border: none;</string>
+   </property>
+   <property name="text">
+    <string>最近能耗趋势</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_unit">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>68</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #8a9099; border: none;</string>
+   </property>
+   <property name="text">
+    <string>(升/百公里)</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="statCard" native="true">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>101</y>
+     <width>291</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#statCard {
+background-color: #ffffff;
+border-radius: 12px;
+}</string>
+   </property>
+   <widget class="QLabel" name="label_statTitle">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>20</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #2b2f36; border: none;</string>
+    </property>
+    <property name="text">
+     <string>累计数据</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stat1">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>90</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #8a9099; border: none;</string>
+    </property>
+    <property name="text">
+     <string>领先同车型</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stat1Value">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>90</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #2b2f36; border: none;</string>
+    </property>
+    <property name="text">
+     <string>39%</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stat2">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>170</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #8a9099; border: none;</string>
+    </property>
+    <property name="text">
+     <string>累计平均能耗</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stat2Value">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>210</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #2b2f36; border: none;</string>
+    </property>
+    <property name="text">
+     <string>5.9升/百公里 =14.3度+1.8升</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stat3">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>280</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #8a9099; border: none;</string>
+    </property>
+    <property name="text">
+     <string>每公里费用</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stat3Value">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>280</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #2b2f36; border: none;</string>
+    </property>
+    <property name="text">
+     <string>0.26元</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="chartCard" native="true">
+   <property name="geometry">
+    <rect>
+     <x>44</x>
+     <y>101</y>
+     <width>631</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#chartCard {
+background-color: #ffffff;
+border-radius: 12px;
+}</string>
+   </property>
+   <widget class="QChartView" name="chartView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>631</width>
+      <height>381</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_legend">
+   <property name="geometry">
+    <rect>
+     <x>334</x>
+     <y>68</y>
+     <width>341</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #2b2f36; border: none;</string>
+   </property>
+   <property name="text">
+    <string>&lt;span style=&quot;color:#4caf50;&quot;&gt;●&lt;/span&gt; 我的　　&lt;span style=&quot;color:#3a6eeb;&quot;&gt;●&lt;/span&gt; 同车型均值</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">QChartView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
